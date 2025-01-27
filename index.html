@@ -2,101 +2,212 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Curso de Hipnose Clínica Híbrida | Certificação Internacional</title>
-    <meta name="description" content="Domine a Hipnose Clínica com aulas online e práticas presenciais. Certificação reconhecida em 15 países.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificação em Hipnose Clínica | Formação Híbrida</title>
+    <meta name="description" content="Domine técnicas científicas de hipnose clínica com experts internacionais. Formação reconhecida pelo IHA">
     
-    <!-- Open Graph Tags para Instagram/Facebook -->
-    <meta property="og:title" content="Curso de Hipnose Clínica Híbrida">
-    <meta property="og:description" content="Formação Completa com Certificação Internacional">
-    <meta property="og:image" content="https://exemplo.com/og-image.jpg">
-    <meta property="og:url" content="https://seusite.github.io">
+    <!-- Open Graph Tags para Redes Sociais -->
+    <meta property="og:image" content="https://seusite.github.io/assets/og-image.jpg">
+    <meta property="og:title" content="Certificação em Hipnose Clínica">
+    <meta property="og:description" content="Formação Híbrida com Práticas Supervisionadas">
     
     <style>
         :root {
-            --primary: #0F172A;
-            --secondary: #D4A83A;
-            --text: #F8FAFC;
+            --primary: #0F172A;      /* Azul Naval - Confiança */
+            --secondary: #D4A83A;    /* Dourado - Valor */
+            --accent: #25665A;       /* Verde Azulado - Harmonia */
+            --text: #F8FAFC;         /* Branco Neutro */
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Inter', system-ui, sans-serif;
         }
 
         body {
             background: var(--primary);
             color: var(--text);
             line-height: 1.6;
-            min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
+        /* Seção Hero */
         .hero {
-            text-align: center;
-            padding: 40px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(37,102,90,0.9) 100%);
+            position: relative;
+            padding: 2rem;
         }
 
-        .cta-button {
-            display: block;
-            background: var(--secondary);
-            color: var(--primary);
-            padding: 16px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            margin: 25px 0;
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        /* Cards de Benefícios */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
             transition: transform 0.3s ease;
         }
 
-        .cta-button:hover {
-            transform: scale(1.05);
+        .benefit-card:hover {
+            transform: translateY(-5px);
         }
 
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-            margin: 15px 0;
+        /* Seção Instrutores */
+        .instructors-section {
+            padding: 4rem 2rem;
+            background: rgba(15,23,42,0.98);
         }
 
-        @media (max-width: 480px) {
-            .container {
-                padding: 15px;
+        .instructor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .instructor-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .instructor-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid var(--secondary);
+        }
+
+        /* Grade Curricular */
+        .curriculum-section {
+            padding: 4rem 2rem;
+            background: var(--primary);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            padding: 2rem;
+            background: rgba(255,255,255,0.03);
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        /* CTA Final */
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+        }
+
+        .price-tag {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin: 2rem 0;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
             }
             
-            .hero {
-                padding: 25px 0;
+            .instructor-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <section class="hero">
-            <h1>Domine a Hipnose Clínica</h1>
-            <p>Formação Híbrida com Certificação Internacional</p>
-        </section>
-
-        <img src="assets/banner-principal.jpg" alt="Método Científico de Hipnose" loading="lazy">
-
-        <a href="#inscricao" class="cta-button">GARANTIR MINHA VAGA →</a>
-
-        <div class="benefits">
-            <h2>O que você vai aprender:</h2>
-            <ul>
-                <li>✅ Protocolos Científicos Comprovados</li>
-                <li>✅ Técnicas para Ansiedade e Estresse</li>
-                <li>✅ Atendimento Clínico Supervisionado</li>
-            </ul>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Certificação em Hipnose Clínica</h1>
+            <p class="subtitle">Formação Híbrida Reconhecida Internacionalmente</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>🎓 Certificação IHA</h3>
+                    <p>Credencial válida em 15 países</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>📅 8 Módulos</h3>
+                    <p>Teoria online + práticas presenciais</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>👨⚕️ Supervisão</h3>
+                    <p>Sessões clínicas supervisionadas</p>
+                </div>
+            </div>
+            <a href="#cta" class="cta-button">Garantir Vaga</a>
         </div>
-    </div>
+    </section>
+
+    <section class="instructors-section">
+        <h2>Nossos Especialistas</h2>
+        <div class="instructor-grid">
+            <!-- Repetir para cada instrutor -->
+            <div class="instructor-card">
+                <img src="instrutor1.jpg" alt="Dr. João Silva" class="instructor-image">
+                <h3>Dr. João Silva</h3>
+                <p>PhD em Psicologia Clínica</p>
+                <ul class="credentials">
+                    <li>✅ 15+ anos de experiência</li>
+                    <li>✅ Autor de 4 livros</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculum-section">
+        <h2>Grade Curricular</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Módulo 1: Fundamentos Científicos</h3>
+                <ul>
+                    <li>Neurofisiologia da hipnose</li>
+                    <li>Ética profissional</li>
+                </ul>
+            </div>
+            <!-- Repetir módulos -->
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Últimas Vagas Disponíveis</h2>
+        <div class="price-tag">
+            <span style="text-decoration: line-through;">R$ 6.997</span><br>
+            12x de R$ 497
+        </div>
+        <a href="#cta" class="cta-button">Quero Minha Certificação</a>
+    </section>
 </body>
 </html>
